@@ -1,11 +1,6 @@
 ---
 name: academic-style
-description: |
-  Apply Nature/JAMA/NEJM/Lancet figure & table style to biostats outputs,
-  or draft a journal-style manuscript skeleton from existing analysis artifacts.
-  Plugin sub-folder per journal (`journals/<short>/{spec.yaml,palette.json,prompt.md,references.md}`).
-  Triggers: /academic-style, /style, 期刊風格, 套 nature 風格, 套 jama 風格, 套 nejm 風格, 套 lancet 風格, post-process figure for journal submission. Subcommand = journal short name (nature|jama|nejm|lancet). Generic flags: --rewrite <path>, --draft, --apply.
-  Integrates with biostats skills (table1 / kaplan-meier / competing-risk / univariate-forest / multivariate-interaction / psm-matching / auc-cstat / flowchart) via a shared `--style=<journal>` argument: those skills import `from academic_style import apply_journal_theme, palette, figure_size`.
+description: "academic-style: applies Nature/JAMA/NEJM/Lancet figure & table style to biostats outputs, or drafts a journal-style manuscript skeleton. Trigger: /academic-style, /style, 期刊風格, 套 nature 風格, 套 jama 風格, 套 nejm 風格, 套 lancet 風格, post-process figure for journal submission. Subcommand = journal short name (nature|jama|nejm|lancet). Flags: --rewrite <path>, --draft, --apply."
 ---
 
 # academic-style
